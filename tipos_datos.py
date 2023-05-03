@@ -88,3 +88,67 @@ print(estudiantes[1])#2° elemento de la lista
 #print(estudiantes[7])#incorrecto
 print('Posición -2', estudiantes[-2])
 
+#DIVISION DE CADENA
+institucion= "Universidad de los Lagos"
+print(institucion.split())
+
+#MIERCOLES 03-05-23
+
+#SUMAR LISTAS
+print("Suma de listas", estudiantes + num)
+
+#¿Que hacen estas funciones?
+print(list("Python"))
+print(list(range(1,5)))
+print(list(range(10)))
+print("\n")
+
+#GENERAR TUPLAS (usan solo parentesis)
+newtupla = tuple()
+grupo1= ("Daniel", "Cristian", "Felipe", 200, 100, "Daniel")
+print("######### TUPLAS #########")
+print(type(grupo1))
+
+#Primer elemento tupla
+print(grupo1[0])
+
+#consultar cuantos datos llamados "Daniel" existen
+print('el elemento se repite: ', grupo1.count("Daniel"))
+
+#muestra el indice del primer elemento buscado
+print('indice del elemento: ', grupo1.index("Daniel"))
+
+#asignando el primer elemento de la tupla
+#grupo1[0] = 'Constanza'
+#print(grupo1)
+
+#¿Se pueden sumar las tuplas?
+
+#obteniendo un trozo de la tupla
+grupo2 = ("Pedro", 100, 'Felipe', 'Diego', 2020, 'Alejandra')
+print('Trozo de tupla: ',grupo2[0:3])
+
+#como modificar una tupla?
+grupo1= list(grupo1)
+print('la tupla ahora es de tipo: ',type(grupo1), "\n")
+print('\n')
+
+#06 - SETS (conjuntos) - Estructura fija
+#formas de inicializar un Set
+print('######### SETS #########')
+conjunto_vacio= set()
+conjunto_vacio1= {} #diccionario o set?
+print(type(conjunto_vacio1))
+conjunto_colores = set({'Azul', 'Rojo', 'Verde'}) #utilizando la funcion set
+conjunto_animales = {'Gato', 'Perro', 'Loro'} #utilizando llaves
+
+print(type(conjunto_colores)) #tipo de dato set
+print(type(conjunto_animales)) #tipo de dato set
+print('el primer set contiene los siguientes colores:',conjunto_colores)
+print('el segundo set contiene los siguientes animales:', conjunto_animales)
+
+print(conjunto_animales[0]) #accediendo al primer elemnto del set
+conjunto_colores.add('Celeste')# el comando ".add" agrega un elemento al conjunto
+print('el set de colores lo conforman:', conjunto_colores)
+
+#sets no permiten elementos duplicados
