@@ -1,3 +1,5 @@
+#Trabajo realizado con Aylin Oyarzún
+
 enombre=input('Ingrese el nombre del estudiante:\n')
 anombre=input('Ingrese nombre de la asignatura:\n')
 nota1=float(input('Ingrese primera nota\n'))
