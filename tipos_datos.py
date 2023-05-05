@@ -1,8 +1,8 @@
 #Clase 26-04-23 apuntes TIPOS DE DATOS
 
-#{}=llaves
-#[]=corchetes
-#()=parentesis
+#{}=llaves/set o diccionario
+#[]=corchetes/listas
+#()=parentesis/tuplas
 #/=division
 #*=multiplicacion
 #**=exponente
@@ -112,17 +112,21 @@ print(type(grupo1))
 #Primer elemento tupla
 print(grupo1[0])
 
+
+#grupo2 = ("Pedro", 100, 'Felipe', 'Diego', 2020, 'Alejandra')
+
 #consultar cuantos datos llamados "Daniel" existen
 print('el elemento se repite: ', grupo1.count("Daniel"))
 
 #muestra el indice del primer elemento buscado
 print('indice del elemento: ', grupo1.index("Daniel"))
 
-#asignando el primer elemento de la tupla
+#asignando el primer elemento de la tupla (Esto no está habilitado, las tuplas son inmutables)
 #grupo1[0] = 'Constanza'
 #print(grupo1)
 
 #¿Se pueden sumar las tuplas?
+#print("Suma de tuplas?", grupo1 + grupo2)
 
 #obteniendo un trozo de la tupla
 grupo2 = ("Pedro", 100, 'Felipe', 'Diego', 2020, 'Alejandra')
@@ -147,8 +151,35 @@ print(type(conjunto_animales)) #tipo de dato set
 print('el primer set contiene los siguientes colores:',conjunto_colores)
 print('el segundo set contiene los siguientes animales:', conjunto_animales)
 
-print(conjunto_animales[0]) #accediendo al primer elemnto del set
+#print(conjunto_animales[0]) #accediendo al primer elemnto del set/ no es posible, es un conjunto de datos desordenados
 conjunto_colores.add('Celeste')# el comando ".add" agrega un elemento al conjunto
 print('el set de colores lo conforman:', conjunto_colores)
-
+print('\n')
 #sets no permiten elementos duplicados
+
+
+#lista con tupla dentro
+
+lista= [('D', 200, True)]
+
+
+print('######### DICCIONARIOS #########')
+diccionario1 = dict()
+diccionario2 = {}
+
+datos_personales = {
+        'Nombre' : 'Monse',
+        'Institucion' : 'Ulagos', 
+        'Edad' : 17,
+        'Periodo' : {'Primer Semestre', 'ICINF'}
+}
+
+#imprimir diccionario
+print('Diccionario inicial: ',datos_personales)
+
+#consulta la cantidad de elementos en el diccionario
+print(len(datos_personales))
+
+#agregando un nuevo campo al diccionario
+datos_personales['Ciudad' : 'Osorno']
+print()
