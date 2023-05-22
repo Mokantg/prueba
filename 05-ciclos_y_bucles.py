@@ -1,6 +1,8 @@
 #for= hasta que yo quiera
 #while= hasta que se cumpla la condición
 
+print('>>>>> COMIENZO CICLO WHILE <<<<<')
+
 #WHILE (MIENTRAS)
 print('\n>>>Creando bucle')
 
@@ -62,3 +64,23 @@ while True:
         break
     else:
         print(parametro)
+print('\n')
+
+print('>>>>> COMIENZO CICLO FOR <<<<<')
+print('>>> Imprimiendo una lista de 10 valores\n')
+#esto no esta bien optimizado
+print('>> Primer For')
+for i in (1,2,3,4,5,6,7,8,9,10):
+    print(i)
+print('\n')
+
+print('>> Segundo For')
+newlista = [1,2,3,4,5,6,7,8,9,10]
+for i in newlista:
+    print(i)
+print('\n')
+
+print('>> Tercer For')
+for i in range(1, 11):
+    print(i)
+print('\n')
